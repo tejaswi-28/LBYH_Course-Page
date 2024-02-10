@@ -1,0 +1,367 @@
+.myprimarycolor{
+    color: #008080;
+}
+.mysecondarycolor{
+    color: #22B286;
+}
+.bg-myprimarycolor{
+    background-color: #008080;
+}
+
+.bg-mysecondarycolor{
+    background-color: #22B286;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0080801F;
+    padding-left: 3%;
+  }
+  .text-content {
+    flex: 1;
+    padding: 1em;
+    padding-top: 6%;
+    padding-right: 45%;
+    padding-bottom: 3%;
+    background-image: url('Images/home.png');
+    background-size: 35% 150%;
+    background-repeat: no-repeat;
+    background-position: 95%;
+  }
+  
+  .text-content h1{
+    font-size: 300%;
+    font-weight: bold;
+  }
+  
+  .text-content .mainpara{
+    font-size: 150%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .text-content p{
+    padding-top: 5%;
+  }
+
+  .btn-group .btn {
+    background-color: white; 
+    color: black; 
+    border: 0cap;
+  }
+  
+  .btn-group .btn.active {
+    color: green; 
+  }
+  
+  .btn-group .btn:hover{
+    background-color: green;
+    color: white;
+  }
+  
+  .card{
+    width: 22rem;
+    box-shadow: 0 0 5px #000000;
+    margin: 10px;
+  }
+  
+  .icon{
+    padding-left: 2%;
+    padding-right: 5%;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .card{
+      width: auto;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .cus_sizing{
+      margin-bottom: 5%;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .text-content {
+        position: relative;
+        max-width: 100%;
+        padding-right: 10%;
+        background-image: none;
+    }
+    .text-content::before {
+        content: "";
+        background-image: url('Images/home.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+    }
+  }
+
+  footer{
+  background-color: #000000ff;
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  padding: 3rem 1rem;
+}
+
+.cus_upper-row{
+  height: 100px;
+  background-color: #000000ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.cus_left-side{
+  width: 40%;
+  text-align: center;
+  color: #008080;
+  font-size: 35px;
+}
+
+.cus_right-side{
+  width: 60%;
+}
+
+.cus_input-container{
+  display: flex;
+  width: 80%;
+}
+
+.subscribe-message{
+  color: #fff;
+}
+
+.cus_input-container input{
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.cus_input-container button{
+  padding: 8px 16px;
+  background-color: #008080;
+  color: #fff;
+  border: 1px solid #008080;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cus_input-container button:hover {
+  background-color: #22B286;
+}
+.cus_separator{
+  height: 3px;
+  background-color: white;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.cus_container {
+  max-width: 56%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+.cus_row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cus_col{
+  min-width: 30%;
+  color:#f2f2f2f2;
+  font-family: poppins;
+  /* padding:0 1rem; */
+}
+
+.cus_col h3{
+  color:#008080;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.cus_col h3::after{
+  content: '';
+  height:3px;
+  width:0px;
+  background-color: #008080;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  transition: 0.3s ease;
+
+}
+.cus_col h3:hover::after{
+  width:30px
+}
+.cus_col .social a i{
+  color:#fff;
+  margin-top:2rem;
+  margin-right: 5px;
+  transition: 0.3s ease;
+}
+.cus_col .social a i:hover{
+  transform: scale(1.5);
+  filter:grayscale(25);
+}
+.cus_col .links a{
+  display: block;
+  text-decoration: none;
+  color:#f2f2f2;
+  margin-bottom: 5px;
+  position: relative;
+  transition: 0.3s ease;
+}
+.cus_col .links a::before{
+  content:'';
+  height: 16px;
+  width:3px;
+  position: absolute;
+  top:5px;
+  left:-10px;
+  background-color: #008080;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.cus_col .links a:hover::before{
+  opacity: 1;
+}
+.cus_col .links a:hover{
+  transform: translateX(-8px);
+  color:#008080;
+}
+.cus_col .contact-details{
+  display: inline-flex;
+  padding: 2%;
+}
+.cus_col .contact-details i{
+  margin-right:20px;
+}
+
+.cus_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:2rem 0;
+}
+
+
+.success{
+  display: none;
+  color: #22B286;
+}
+
+
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+.cus_row{
+  flex-direction: column;
+}
+.cus_col{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 25px;
+}
+  .cus_col .links {
+  display: none;
+}
+}
+@media(max-width:768px)
+{
+  .cus_upper-row {
+    height: auto;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+    text-align: center;
+}
+
+.cus_left-side,
+.cus_right-side {
+    width: 100%;
+}
+
+.cus_input-container {
+    /* flex-direction: column; */
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+
+.cus_input-container input {
+    width: 80%;
+}
+
+.cus_input-container button{
+  width: 15%;
+}
+.cus_row{
+  flex-direction: column;
+}
+.cus_col{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.cus_col .links {
+    display: none;
+  }
+}
+
+/* Style for the caret icon */
+.cus_col h3 .fas {
+  transition: transform 0.3s ease;
+}
+
+/* Style for the visible content */
+.cus_col .links.active {
+  display: block;
+}
+
+/* Rotate the caret when active */
+.cus_col h3.active .fas-caret-down {
+  transform: rotate(180deg);
+}
+
+.copyright {
+  background-color: #222;
+  color: #fff;
+  padding: 1px;
+  text-align: center;
+}
